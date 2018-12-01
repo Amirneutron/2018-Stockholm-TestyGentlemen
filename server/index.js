@@ -3,11 +3,11 @@ import axios from 'axios';
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('public', { index: false, extensions: ['html'] }));
 
 app.get('/health', (req, res) => {
   res.send({
-    status: 'running!'
+    status: 'running!',
   });
 });
 

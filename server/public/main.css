@@ -1,1 +1,9 @@
-body {}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+  animation: opacity 0.2s ease-out;
+}
