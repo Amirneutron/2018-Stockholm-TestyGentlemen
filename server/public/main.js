@@ -4,7 +4,7 @@ const SPINNER_TIMEOUT = 4000;
 // =============== first page here ======== //
 const welcomeFormWrapper = document.querySelector('.welcome-form');
 const spinnerWrapper = document.querySelector('.spinner');
-const submitButton = document.querySelector('.login');
+const submitButton = document.querySelector('.login') || { addEventListener: () => {} };
 
 submitButton.addEventListener('click', () => {
   [welcomeFormWrapper, spinnerWrapper].forEach((el) => el.classList.toggle('hidden'));
@@ -14,8 +14,7 @@ submitButton.addEventListener('click', () => {
 });
 
 // animate spinner dots
-const dots = document.getElementById('moving-dots');
-
+const dots = document.getElementById('moving-dots') || {};
 let num = 0;
 setInterval(() => {
   dots.textContent = '.'.repeat(num);
@@ -25,3 +24,13 @@ setInterval(() => {
     num += 1;
   }
 }, 200);
+
+// ============ search results here =============== //
+// handle toggle
+const listItems = [...document.getElementsByClassName('single-result-wrapper')];
+const extraInfos = [...document.getElementsByClassName('extras')];
+listItems.forEach((el, idx) => {
+  el.addEventListener('click', (e) => {
+    extraInfos[idx].classList.toggle('collapsed');
+  });
+});
