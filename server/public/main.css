@@ -1,9 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-body {
+html {
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
 }
 
 .hidden {
   opacity: 0;
   animation: opacity 0.2s ease-out;
+}
+
+.content {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.jobz {
+  color: #A7D86D;
+  font-family: Poppins;
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 200px;
+  text-align: center;
+}
+
+.one-step-ahead {
+  color: #65617D;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-link {
+  margin: 20px 0;
+  outline: none;
+  border: none;
+  height: 44px;
+  width: 579px;
+  border-radius: 7px;
+  padding-left: 14px;
+  box-shadow: inset 0 1px 6px 0 rgba(0, 0, 0, 0.32), -1px 2px 9px 0 rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.login {
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 2px 8px #e4e4e4;
+  height: 44px;
+  width: 231px;
+  background-color: #73C700;
+  width: 231px;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.41px;
+  text-align: center;
 }
