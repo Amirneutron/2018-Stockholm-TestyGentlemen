@@ -134,7 +134,7 @@ nav .profile-name {
   padding: 6px 2px;
   border-radius: 100px;
   background: var(--brand-green);
-  font-size: 17px;
+  font-size: 14px;
   color: white;
   border: none;
   text-transform: uppercase;
@@ -142,6 +142,7 @@ nav .profile-name {
   align-items: center;
   font-weight: bold;
   justify-content: center;
+  opacity: .6;
 }
 
 .search-result h1 {
