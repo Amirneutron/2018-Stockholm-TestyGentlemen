@@ -193,7 +193,6 @@ nav .profile-name {
 }
 
 .content {
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,9 +303,16 @@ nav .profile-name {
 
 .extras .previous_list {
   margin-right: 60px;
+  margin-top: 30px;
 }
 
-.extras .previous_list .heading, .extras .previous_list .heading .previous_list {
+.extras .previous_list .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px rgb(111, 106, 106);
+}
+
+.extras .previous_list .heading, .extras .previous_list .heading .item {
   font-weight: bold;
   color: #65617D;
   font-size: 16px;

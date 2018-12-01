@@ -26,11 +26,11 @@ setInterval(() => {
 }, 200);
 
 // ============ search results here =============== //
-// handle toggle
+// handle toggle if job posting
 const listItems = [...document.getElementsByClassName('single-result-wrapper')];
 const extraInfos = [...document.getElementsByClassName('extras')];
 listItems.forEach((el, idx) => {
-  el.addEventListener('click', (e) => {
+  el.addEventListener('click', () => {
     extraInfos[idx].classList.toggle('collapsed');
   });
 });
