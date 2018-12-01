@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+:root {
+  --brand-green: #A7D86D;
+  --brand-grey: #65617D;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  color: var(--brand-grey);
 }
 
 h1 {
@@ -19,7 +25,7 @@ nav {
 }
 
 nav .left-title {
-  color: #A7D86D;
+  color: var(--brand-green);
   font-size: 90px;
   font-weight: bold;
   height: 110px;
@@ -27,7 +33,6 @@ nav .left-title {
 
 nav .slogan {
   font-size: 30px;
-  color: #65617D;
   margin: 0;
   margin-left: 20px;
 }
@@ -39,7 +44,6 @@ nav .profile-wrapper {
 }
 
 nav .profile-name {
-  color: #65617D;
   font-size: 20px;
   margin-right: 20px;
 }
@@ -61,7 +65,7 @@ nav .profile-name {
 }
 
 .skills-input-wrapper .filter-param {
-  background: #65617D;
+  background: var(--brand-grey);
   padding: 0 5px;
   color: white;
   font-weight: bold;
@@ -70,10 +74,85 @@ nav .profile-name {
 }
 
 .skills-input-wrapper .filter-param.suggestion {
-  color: #65617D;
+  color: var(--brand-grey);
   background: white;
   border: 0.7px solid #9B9B9B;
   border-radius: 3px;
+}
+
+
+/* search results */
+
+.search-results {
+  border: 2px solid black;
+  margin-top: 60px;
+}
+
+.search-results .search-result {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.company-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--brand-grey);
+  justify-self: flex-start;
+  flex: 2;
+  margin-left: 6px;
+}
+
+.company-name-wrapper button {
+  width: 150px;
+  padding: 4px 9px;
+  border-radius: 4.2px;
+  background: var(--brand-green);
+  font-size: 17px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.search-result h1 {
+  text-align: center;
+  font-size: 52px;
+}
+
+.search-result p {
+  text-align: center;
+  font-size: 12;
+  width: 60%;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.jobs-per-year, .days-since-last-job {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.days-since-last-job h1 {
+  color: var(--brand-green);
+}
+
+.days-since-last-job p {
+  margin: 0;
+}
+
+.progress-wrapper {
+  height: 20px;
+  width: 100%;
+  background: var(--brand-grey);
+  margin-bottom: 10px;
+  border-radius: 100px;
 }
 
 
@@ -96,7 +175,7 @@ nav .profile-name {
 }
 
 .jobz {
-  color: #A7D86D;
+  color: var(--brand-green);
   font-family: Poppins;
   font-size: 200px;
   font-weight: bold;
@@ -105,7 +184,6 @@ nav .profile-name {
 }
 
 .one-step-ahead {
-  color: #65617D;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
