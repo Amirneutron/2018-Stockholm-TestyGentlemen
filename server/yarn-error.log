@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Matias\.npm-global\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Matias\bin;C:\Program Files\MongoDB\Server\3.6\bin;C:\Program Files\dotnet;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Gow\bin;C:\Program Files\PuTTY;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Go\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\3.6\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Users\Matias\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ruby 2.4.2-2-x64;C:\Program Files\Heroku\bin;C:\Ruby24-x64\bin;C:\Users\Matias\.npm-global;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Users\Matias\RealAnaconda3;C:\Users\Matias\RealAnaconda3\Scripts;C:\Program Files\redis-4.0.9\src;C:\Program Files\Genymobile\Genymotion\tools;C:\Users\Matias\AppData\Local\Android\Sdk\platform-tools;C:\WINDOWS\system32;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Matias\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Matias\AppData\Local\Microsoft\WindowsApps;C:\gopath\bin;C:\Users\Matias\AppData\Roaming\npm
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.11.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "livehacks-5",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon ."
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.16.3",
+    },
+    "devDependencies": {
+      "nodemon": "^1.17.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: C:\Users\Matias\Documents\Project\package.json: Unexpected token } in JSON at position 221
+      at JSON.parse (<anonymous>)
+      at C:\Users\Matias\.npm-global\node_modules\yarn\lib\cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Matias\.npm-global\node_modules\yarn\lib\cli.js:92:30)
+      at C:\Users\Matias\.npm-global\node_modules\yarn\lib\cli.js:103:13
+      at <anonymous>
