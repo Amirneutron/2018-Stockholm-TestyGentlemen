@@ -8,6 +8,9 @@ h1 {
   margin: 0;
 }
 
+
+/* main screen */
+
 nav {
   display: flex;
   justify-content: center;
@@ -40,6 +43,41 @@ nav .profile-name {
   font-size: 20px;
   margin-right: 20px;
 }
+
+.main-content {
+  padding-top: 60px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.skills-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 1px 6px 0 rgba(0, 0, 0, 0.32), -1px 2px 9px 0 rgba(0, 0, 0, 0.5);
+  padding: 7px;
+  color: #9B9B9B;
+}
+
+.skills-input-wrapper .filter-param {
+  background: #65617D;
+  padding: 0 5px;
+  color: white;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+.skills-input-wrapper .filter-param.suggestion {
+  color: #65617D;
+  background: white;
+  border: 0.7px solid #9B9B9B;
+  border-radius: 3px;
+}
+
+
+/* ============ welcome screen ============ */
 
 .hidden {
   opacity: 0;
