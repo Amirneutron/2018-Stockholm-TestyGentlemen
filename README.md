@@ -23,6 +23,16 @@ We anticipate job offers by analyzing historical job postings.
 - Python
 - Node.js
 
+## How to Run the Project
+Make sure to do a `git pull` first
+
+### Node.js
+Make sure to have Node.js as well as `yarn` installed.
+Run the command `cd server`. Then, install the dependencies by running `yarn install`.
+When the packages have been installed, run project with the following command: `yarn dev`.
+Now, open your browser in `http://localhost:3000/welcome`.
+
+
 
 ## Team memberrs
 - Al-Amir Adegbuji-Onikoyi
