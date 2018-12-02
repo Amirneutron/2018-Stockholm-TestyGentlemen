@@ -7,6 +7,7 @@ const spinnerWrapper = document.querySelector('.spinner');
 const submitButton = document.querySelector('.login') || { addEventListener: () => {} };
 
 submitButton.addEventListener('click', () => {
+  document.getElementsByTagName('body')[0].style.background = 'white';
   [welcomeFormWrapper, spinnerWrapper].forEach((el) => el.classList.toggle('hidden'));
   setTimeout(() => {
     window.location.pathname = 'results';
