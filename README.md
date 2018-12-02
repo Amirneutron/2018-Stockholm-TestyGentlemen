@@ -8,10 +8,12 @@ JobTech - Enhance job seeking via visualization
 We anticipate job offers by analyzing historical job postings.
 
 ## Getting Started
-- Download archive data from https://jobtechdev.se/apidatasets/historical-job-postings
+- Download archive data (Or use the provided sample file test.json)
+- Launch app.py Flask server 
+- Launch Express Server
 
 ## Services Used
-- JobTech Historical Job Postings archive files.
+- JobTech Historical Job Postings archive files from https://jobtechdev.se/apidatasets/historical-job-postings.
 
 ## Languages used
 ### Front-End
