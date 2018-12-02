@@ -34,6 +34,12 @@ Run the command `cd server`. Then, install the dependencies by running `yarn ins
 When the packages have been installed, run project with the following command: `yarn dev`.
 Now, open your browser in `http://localhost:3000/welcome`.
 
+### Python
+Make sure to have python3.5 installed.
+Run the command `cd Python backend/hackathon-backend`. Then, install the dependencies by running `pip3 install -r requirements.txt`.
+When the dependencies have been installed, run project with the following command: `python3 api.py`.
+Now, open your browser in `localhost:8181/extract/andreas-scherman/0`.
+
 
 
 ## Team memberrs
