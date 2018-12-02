@@ -26,7 +26,7 @@ We anticipate job offers by analyzing historical job postings.
 
 ## Team memberrs
 - Al-Amir Adegbuji-Onikoyi
-- Gagar Singh
+- Gagandeep Singh
 - José Somolinos  
 - Philip Cisneros
 - Prashanna Rai
