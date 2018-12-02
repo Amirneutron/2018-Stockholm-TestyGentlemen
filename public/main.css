@@ -20,6 +20,17 @@ a {
   text-decoration: none;
 }
 
+.jobz {
+  padding-top: 100px;
+}
+
+.spinner img {
+  max-width: 60%;
+  max-height: 60%;
+
+}
+
+
 /* main screen */
 
 nav {
@@ -216,7 +227,7 @@ nav .profile-name {
 .hidden {
   opacity: 0;
   transform: scale(0);
-  animation: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
 .content {
@@ -250,22 +261,28 @@ nav .profile-name {
 }
 
 .profile-link {
-  margin: 20px 0;
+  margin: 40px 0;
   outline: none;
-  border: none;
+  border: 1px solid #e4e4e4;
   height: 44px;
   width: 579px;
-  border-radius: 7px;
   padding-left: 14px;
-  box-shadow: inset 0 1px 6px 0 rgba(0, 0, 0, 0.32), -1px 2px 9px 0 rgba(0, 0, 0, 0.5);
+  /* box-shadow: inset 0 1px 6px 0 rgba(0, 0, 0, 0.32), -1px 2px 9px 0 rgba(0, 0, 0, 0.5); */
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px;
   font-size: 20px;
+  transition: border .2s ease-out;
+}
+
+.profile-link:focus {
+  border: 1px solid var(--brand-green);
 }
 
 .login {
   cursor: pointer;
   border-radius: 3px;
   border: none;
-  box-shadow: 2px 2px 8px #e4e4e4;
   min-height: 44px;
   width: 231px;
   background-color: #73C700;
@@ -275,6 +292,12 @@ nav .profile-name {
   font-weight: bold;
   letter-spacing: -0.41px;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.login:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .dream-jobs {
