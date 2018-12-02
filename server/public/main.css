@@ -24,10 +24,18 @@ a {
   padding-top: 100px;
 }
 
-.spinner img {
-  max-width: 60%;
-  max-height: 60%;
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-50px);
+}
 
+.spinner img {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto;
 }
 
 
@@ -301,7 +309,6 @@ nav .profile-name {
 }
 
 .dream-jobs {
-  padding-left: 20%;
   font-size: 20px;
   color: #9B9B9B;
   font-weight: normal;
