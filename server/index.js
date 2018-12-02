@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const app = express();
 
-app.use(express.static('public', { index: false, extensions: ['html'] }));
+app.use(express.static('public', { index: false, extensions: ['html', 'pdf'] }));
 
 app.get('/health', (req, res) => {
   res.send({
